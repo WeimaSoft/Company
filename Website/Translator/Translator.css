@@ -1,0 +1,20 @@
+.translator{
+	width:100%;
+	overflow:hidden;
+}
+
+.translator-active{
+	width:1000px;
+	margin:0 auto;
+}
+
+.translator-item-container {
+    width: 4000px;
+    overflow: visible;
+}
+
+.translator-item {
+    width: 1000px;
+    height: 564px;
+    float: left;
+}
