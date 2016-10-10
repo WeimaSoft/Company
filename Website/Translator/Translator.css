@@ -23,8 +23,6 @@
 .translator-item-container {
 	width: 4000px;
 	position: relative;
-	transform:translate3d(-1000px,0,0);
-	transition-duration: 500ms;
 }
 
 .translator-item {
