@@ -10,9 +10,21 @@
 	position: relative;
 }
 
+.overflowv
+{
+	overflow: visible;
+}
+
+.overflowh
+{
+	overflow: hidden;
+}
+
 .translator-item-container {
 	width: 4000px;
 	position: relative;
+	transform:translate3d(-1000px,0,0);
+	transition-duration: 500ms;
 }
 
 .translator-item {
@@ -44,41 +56,35 @@
 .translator-left-icon {
 	width: 57px;
 	height: 73px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 	cursor: pointer;
-	top: 50%;
+	top: 178px;
 	left:0;
-	margin-top: 163px;
 }
 
 .translator-left-icon div {
 	background-position: 0 -77px;
-	position: absolute;
+	position: relative;
 	width: 57px;
 	height: 73px;
-	left: 0;
-	top: 0;
 	background-image: url(Images/element.png);
 }
 
 .translator-right-icon {
 	width: 57px;
 	height: 73px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 	cursor: pointer;
-	top: 50%;
-	right:0;
-	margin-top: 163px;
+	top: 105px;
+	left:950px;
 }
 
 .translator-right-icon div {
 	background-position: 0 -150px;
-	position: absolute;
+	position: relative;
 	width: 57px;
 	height: 73px;
-	left: 0;
-	top: 0;
 	background-image: url(Images/element.png);
 }
