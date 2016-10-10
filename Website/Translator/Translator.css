@@ -1,20 +1,84 @@
-.translator{
-	width:100%;
-	overflow:hidden;
+.translator {
+	width: 100%;
+	overflow: hidden;
 }
 
-.translator-active{
-	width:1000px;
-	margin:0 auto;
+.translator-container {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: visible;
+	position: relative;
 }
 
 .translator-item-container {
-    width: 4000px;
-    overflow: visible;
+	width: 4000px;
+	position: relative;
 }
 
 .translator-item {
-    width: 1000px;
-    height: 564px;
-    float: left;
+	width: 1000px;
+	height: 564px;
+	float: left;
+}
+
+.translator-left {
+	position: absolute;
+	top: 0;
+	right: 1000px;
+	width: 1000px;
+	height: 564px;
+	background: #000;
+	opacity: 0.5;
+}
+
+.translator-right {
+	position: absolute;
+	top: 0;
+	left: 1000px;
+	width: 1000px;
+	height: 564px;
+	background: #000;
+	opacity: 0.5;
+}
+
+.translator-left-icon {
+	width: 57px;
+	height: 73px;
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+	top: 50%;
+	left:0;
+	margin-top: 163px;
+}
+
+.translator-left-icon div {
+	background-position: 0 -77px;
+	position: absolute;
+	width: 57px;
+	height: 73px;
+	left: 0;
+	top: 0;
+	background-image: url(Images/element.png);
+}
+
+.translator-right-icon {
+	width: 57px;
+	height: 73px;
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+	top: 50%;
+	right:0;
+	margin-top: 163px;
+}
+
+.translator-right-icon div {
+	background-position: 0 -150px;
+	position: absolute;
+	width: 57px;
+	height: 73px;
+	left: 0;
+	top: 0;
+	background-image: url(Images/element.png);
 }
