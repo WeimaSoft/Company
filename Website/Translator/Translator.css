@@ -1,27 +1,17 @@
 .translator {
 	width: 100%;
-	overflow: hidden;
 }
 
 .translator-container {
 	width: 1000px;
 	margin: 0 auto;
-	overflow: visible;
+	height: 564px;
 	position: relative;
-}
-
-.overflowv
-{
-	overflow: visible;
-}
-
-.overflowh
-{
-	overflow: hidden;
 }
 
 .translator-item-container {
 	width: 4000px;
+	height: 564px;
 	position: relative;
 }
 
@@ -31,58 +21,35 @@
 	float: left;
 }
 
-.translator-left {
-	position: absolute;
-	top: 0;
-	right: 1000px;
-	width: 1000px;
-	height: 564px;
-	background: #000;
-	opacity: 0.5;
-}
-
-.translator-right {
-	position: absolute;
-	top: 0;
-	left: 1000px;
-	width: 1000px;
-	height: 564px;
-	background: #000;
-	opacity: 0.5;
-}
-
-.translator-left-icon {
+.translator-btnpreview {
 	width: 57px;
 	height: 73px;
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 	cursor: pointer;
-	top: 178px;
-	left:0;
+	top: 45%;
 }
 
-.translator-left-icon div {
+.translator-btnpreview div {
+	position: absolute;
+	width: 57px;
+	height: 73px;
+	background-image: url(Images/element.png);
+}
+
+.left0 div {
 	background-position: 0 -77px;
-	position: relative;
-	width: 57px;
-	height: 73px;
-	background-image: url(Images/element.png);
 }
 
-.translator-right-icon {
-	width: 57px;
-	height: 73px;
-	position: relative;
-	z-index: 1000;
-	cursor: pointer;
-	top: 105px;
-	left:950px;
-}
-
-.translator-right-icon div {
+.right0 div {
 	background-position: 0 -150px;
-	position: relative;
-	width: 57px;
-	height: 73px;
-	background-image: url(Images/element.png);
+}
+
+
+.translator-item-preview {
+	position: absolute;
+	top: 0;
+	width: 1000px;
+	background: #000;
+	opacity: 0.5;
 }
