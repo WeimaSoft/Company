@@ -2,6 +2,11 @@ body{
 	margin: 0px;
 }
 
+.section
+{
+	width:100%;
+}
+
 .overflowv
 {
 	overflow: visible;

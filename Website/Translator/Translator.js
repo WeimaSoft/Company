@@ -112,7 +112,6 @@ $(document).ready(function () {
     options.ImagesCollection = [];
     options.ImagesCollection.push(Translator.CreateImageItem('Images/1.jpg', '#'));
     options.ImagesCollection.push(Translator.CreateImageItem('Images/2.jpg', '#'));
-    options.ImagesCollection.push(Translator.CreateImageItem('Images/3.jpg', '#'));
     options.DisplayPreview = false;
     options.AutoPlay = false;
 
