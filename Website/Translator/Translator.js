@@ -11,8 +11,8 @@
         Options: {
             ImagesCollection: [],
             ImageWidth: 1000,
+			ImageHeight:564,
             TransitionDuration: 500,
-            DisplayPreview: true,
             AutoPlay: true,
             AutoPlayDuration:5000
         },
@@ -23,30 +23,30 @@
             translatorContainer.addClass('translator overflowh');
 
             var translatorWrapper = $("<div class='translator-container overflowh'>").appendTo(translatorContainer);
+			translatorWrapper.css("width",this.Options.ImageWidth + "px");
+			translatorWrapper.css("height",this.Options.ImageHeight + "px");
 
-            translatorItemContainer = $("<div class='translator-item-container overflowh'></div>").appendTo(translatorWrapper);
+            translatorItemContainer = $("<div class='translator-item-container overflowh'>").appendTo(translatorWrapper);
             translatorItemContainer.css('transition-duration', this.Options.TransitionDuration + 'ms');
             translatorItemContainer.css('transform', 'translate3d(-' + this.Options.ImageWidth + 'px,0,0)');
+			translatorItemContainer.css("width",this.Options.ImageWidth * (this.Options.ImagesCollection.length + 2) + "px");
+			translatorItemContainer.css("height",this.Options.ImageHeight + "px");
 
             for (var imgItem in this.Options.ImagesCollection) {
                 var img = this.Options.ImagesCollection[imgItem];
-                translatorItemContainer.append("<div class='translator-item'><a href='" + img.Link + "'><img src='" + img.Url + "'></a></div>");
+                translatorItemContainer.append("<div class='translator-item' style='width:" + this.Options.ImageWidth+"px;height:" +this.Options.ImageHeight + "'><a href='" + img.Link + "'><img src='" + img.Url + "'></a></div>");
             }
 
             for (var i = 0; i < 2; i++) {
                 var img = this.Options.ImagesCollection[i];
-                translatorItemContainer.append("<div class='translator-item'><a href='" + img.Link + "'><img src='" + img.Url + "'></a></div>");
+                translatorItemContainer.append("<div class='translator-item' style='width:" + this.Options.ImageWidth+"px;height:" +this.Options.ImageHeight + "'><a href='" + img.Link + "'><img src='" + img.Url + "'></a></div>");
             }
             
-            var btnPrevious = $("<div class='translator-btnpreview left0'><div></div></div>").appendTo(translatorWrapper);
+            var btnPrevious = $("<div class='translator-btnpreview left0' style='top:" + (this.Options.ImageHeight - 70)/2 + "px'><div></div></div>").appendTo(translatorWrapper);
             btnPrevious.click(function(){self.ViewPrevious();})
             
-            var btnNext = $("<div class='translator-btnpreview right0'><div></div></div>").appendTo(translatorWrapper);
+            var btnNext = $("<div class='translator-btnpreview right0' style='top:" + (this.Options.ImageHeight - 70)/2 + "px'><div></div></div>").appendTo(translatorWrapper);
             btnNext.click(function(){self.ViewNext();})
-            
-            if (this.Options.DisplayPreview) {
-                translatorWrapper.append("<div class='translator-item-preview' style='right:" + this.Options.ImageWidth + "' ></div><div class='translator-item-preview' style='left:" + this.Options.ImageWidth + "'></div>");
-            }
 
             if (this.Options.AutoPlay) {
                 this.AutoPlay();
@@ -112,8 +112,11 @@ $(document).ready(function () {
     options.ImagesCollection = [];
     options.ImagesCollection.push(Translator.CreateImageItem('Images/1.jpg', '#'));
     options.ImagesCollection.push(Translator.CreateImageItem('Images/2.jpg', '#'));
+	options.ImagesCollection.push(Translator.CreateImageItem('Images/3.jpg', '#'));
     options.DisplayPreview = false;
-    options.AutoPlay = false;
+    options.AutoPlay = true;
+	options.ImageWidth = 1000;
+	options.ImageHeight = 640;
 
     Translator.Slide($('#example'), options);
 });

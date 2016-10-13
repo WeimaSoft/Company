@@ -3,21 +3,15 @@
 }
 
 .translator-container {
-	width: 1000px;
 	margin: 0 auto;
-	height: 564px;
 	position: relative;
 }
 
 .translator-item-container {
-	width: 5000px;
-	height: 564px;
 	position: relative;
 }
 
 .translator-item {
-	width: 1000px;
-	height: 564px;
 	float: left;
 }
 
@@ -27,7 +21,6 @@
 	position: absolute;
 	z-index: 1000;
 	cursor: pointer;
-	top: 45%;
 }
 
 .translator-btnpreview div {
@@ -43,13 +36,4 @@
 
 .right0 div {
 	background-position: 0 -150px;
-}
-
-
-.translator-item-preview {
-	position: absolute;
-	top: 0;
-	width: 1000px;
-	background: #000;
-	opacity: 0.5;
 }
