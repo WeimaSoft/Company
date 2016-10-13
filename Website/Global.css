@@ -1,5 +1,6 @@
 body{
 	margin: 0px;
+	font-size: 14px;
 }
 
 .section
@@ -7,9 +8,24 @@ body{
 	width:100%;
 }
 
+.floatl
+{
+	float:left;
+}
+
+.floatr
+{
+	float:right;
+}
+
 .overflowv
 {
 	overflow: visible;
+}
+
+.fixed
+{
+	position: fixed;
 }
 
 .overflowh
