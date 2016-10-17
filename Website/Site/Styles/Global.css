@@ -1,0 +1,45 @@
+body{
+	margin: 0px;
+	font-size: 14px;
+}
+
+.section
+{
+	width:100%;
+	background-color: #333;
+}
+
+.floatl
+{
+	float:left;
+}
+
+.floatr
+{
+	float:right;
+}
+
+.overflowv
+{
+	overflow: visible;
+}
+
+.fixed
+{
+	position: fixed;
+}
+
+.overflowh
+{
+	overflow: hidden;
+}
+
+.left0
+{
+	left:0;
+}
+
+.right0
+{
+	right:0;
+}

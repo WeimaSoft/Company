@@ -1,0 +1,39 @@
+.translator {
+	width: 100%;
+}
+
+.translator-container {
+	margin: 0 auto;
+	position: relative;
+}
+
+.translator-item-container {
+	position: relative;
+}
+
+.translator-item {
+	float: left;
+}
+
+.translator-btnpreview {
+	width: 57px;
+	height: 73px;
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.translator-btnpreview div {
+	position: absolute;
+	width: 57px;
+	height: 73px;
+	background-image: url(../Images/element.png);
+}
+
+.left0 div {
+	background-position: 0 -77px;
+}
+
+.right0 div {
+	background-position: 0 -150px;
+}

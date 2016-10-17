@@ -1,0 +1,49 @@
+.footer {
+	width: 1000px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.fixed-bottom{
+	position:fixed;
+	bottom:0px;
+}
+
+.footer-link-container {
+	height: 40px;
+	margin: 0 auto;
+	width:600px;
+	padding-top:20px;
+}
+
+.footer-link-container a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.copyright
+{
+	font-size:12px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width:600px;
+	text-align: center;
+}
+
+.extra {
+	border-left: 1px solid #929292;
+	padding-left:5px;
+}
+
+.beian
+{
+	font-size:12px;
+	color: #fff;
+	margin:10px auto;
+	width:600px;
+	text-align: center;
+}

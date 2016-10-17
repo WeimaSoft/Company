@@ -6,7 +6,6 @@
 	position:relative;
 	top:0px;
 }
-
 .navigator-item-container{
 	margin: 0 auto;
 }
@@ -63,7 +62,7 @@
     height: 19px;
     vertical-align: middle;
     cursor: pointer;
-    background: url(Images/icon.png) -185px 0;
+    background: url(../Images/icon.png) -185px 0;
 }
 
 .navigator-register {
