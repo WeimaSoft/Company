@@ -116,7 +116,8 @@ $(document).ready(function () {
     options.DisplayPreview = false;
     options.AutoPlay = true;
 	options.ImageWidth = 1000;
-	options.ImageHeight = 640;
+	options.ImageHeight = 600;
 
     Translator.Slide($('#example'), options);
+    Translator.Slide($('#example1'), options);
 });
