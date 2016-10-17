@@ -70,29 +70,3 @@
 	position:absolute;
 	right:0px;
 }
-
-.topNavigator {
-	height: 80px;
-	background-color: #123;
-	width: 100%;
-}
-
-.topNavigator li {
-	margin-top: 20px;
-	line-height: 40px;
-	width: 20%;
-	float: left;
-	list-style-type: none;
-	text-align: center;
-	height: 100%;
-}
-
-.topNavigator li>a {
-	font-size: 20px;
-	color: #ff0;
-	text-decoration: none;
-}
-
-.topNavigator li>a:hover {
-	color: #fff;
-}

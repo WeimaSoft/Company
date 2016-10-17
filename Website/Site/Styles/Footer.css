@@ -16,6 +16,7 @@
 	margin: 0 auto;
 	width:600px;
 	padding-top:20px;
+	clear:both;
 }
 
 .footer-link-container a {
@@ -34,7 +35,7 @@
 	text-align: center;
 }
 
-.extra {
+.footer-link-extra {
 	border-left: 1px solid #929292;
 	padding-left:5px;
 }
