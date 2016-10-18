@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Weimasoft">
+<link rel="shortcut icon" href="images/fav.ico">
+<title>后台管理</title>
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+<link href="styles/bootstrap-reset.css" rel="stylesheet">
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="styles/style.css" rel="stylesheet">
+<link href="styles/style-responsive.css" rel="stylesheet">
+<link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet">
+<link href="styles/clndr.css" rel="stylesheet">
+<!-- CALENDER CSS -->
+<!--[if lt IE 9]>
+	<script src="scripts/html5shiv.js">
+	</script>
+	<script src="scripts/respond.min.js">
+	</script>
+<![endif]-->
+</head>
+<body>
+	<section id="container">
+		<header class="header white-bg">
+		    <div class="sidebar-toggle-box">
+		        <div data-placement="right" class="fa fa-bars tooltips"></div>
+		    </div>
+		    <a href="index.htm" class="logo"> <span> 通用后台管理工具 </span></a>
+		    <div class="top-nav ">
+		        <ul class="nav pull-right top-menu">
+		            <li class="dropdown">
+		                <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
+		                	<img alt="" src="images/avatar1_small.jpg" /> 
+		                	<span class="username"> Admin </span> 
+		                	<b class="caret"> </b> 
+	                	</a>
+		                <ul class="dropdown-menu extended logout">
+		                    <li class="log-arrow-up"></li>
+		                    <li>
+		                        <a href="#">
+		                        	<i class="fa fa-suitcase"> </i> 个人资料 
+	                        	</a>
+		                    </li>
+		                    <li>
+		                        <a href="settings.htm">
+		                        	<i class="fa fa-cog"> </i> 系统设置
+	                        	</a>
+		                    </li>
+		                    <li>
+		                        <a href="#">
+		                        	<i class="fa fa-key"> </i> 退出登录 
+	                        	</a>
+		                    </li>
+		                    
+		                </ul>
+		            </li>
+		        </ul>
+		    </div>
+		</header>
+
+		<aside>
+			<div id="sidebar" class="nav-collapse">
+				<ul class="sidebar-menu" id="nav-accordion">
+					<li>
+						<a href="index.htm" class="active"> 
+							<i class="fa fa-dashboard"> </i> 
+							<span> 管理首页 </span>
+						</a>
+					</li>
+					<li class="sub-menu">
+						<a href="javascript:;"> 
+							<i class="fa fa-laptop"> </i> 
+							<span> 新闻管理 </span> 
+							<span class="label label-success span-sidebar"> 3 </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#"> 行业动态 </a></li>
+							<li><a href="#"> 公司公告 </a></li>
+							<li><a href="#"> 法律法规 </a></li>
+						</ul>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-book"> </i> <span> 产品管理 </span> 
+						</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-cogs"> </i> <span> 用户管理 </span> 
+							<span class="label label-primary span-sidebar"> 2 </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#"> 用户列表 </a></li>
+							<li><a href="#"> 用户活动报表 </a></li>
+						</ul>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-tasks"> </i> <span> 关于我们 </span> 
+						</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-th"> </i> <span> 联系我们 </span> 
+						</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-envelope"> </i> 
+							<span> 留言管理</span> 
+							<span class="label label-warning span-sidebar"> 2 </span>
+						</a>
+						<ul class="sub">
+							<li><a href="#"> 留言列表 </a></li>
+							<li><a href="#"> 公司反馈 </a></li>
+						</ul>
+					</li>
+					<li class="sub-menu">
+						<a href="#"> 
+							<i class="fa fa-bar-chart-o"> </i> 
+							<span> 友情链接</span> 
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<section id="main-content">
+			<section class="wrapper">
+				<div class="row">
+					<div class="col-lg-6">
+					 	<section class="panel">
+				      		<header class="panel-heading">
+				        		<span class="label label-primary">基础信息</span>
+				      		</header>
+					      	<div class="panel-body">
+					        	<form class="form-horizontal" role="form">
+					          		<div class="form-group">
+					           		 	<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">邮件地址</label>
+						            	<div class="col-lg-10">
+						              		<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				                		</div>
+					          		</div>
+						          	<div class="form-group">
+						            	<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">联系电话</label>
+						            	<div class="col-lg-10">
+						              		<input type="phone" class="form-control" id="inputEmail1" placeholder="phone">
+					                	</div>
+						          	</div>
+						          	<div class="form-group">
+									    <div class="col-lg-offset-2 col-lg-10">
+									        <div class="checkbox">
+									            <label><input type="checkbox">页面显示采用现代高端大气上档次的模板类型</label>
+								            </div>
+									    </div>
+									</div>
+					        	</form>
+					      	</div>
+				    	</section>
+					</div>
+					<div class="col-lg-6">
+					 	<section class="panel">
+				      		<header class="panel-heading">
+				        		<span class="label label-primary">公司信息</span>
+				      		</header>
+					      	<div class="panel-body">
+					        	<form class="form-horizontal" role="form">
+					          		<div class="form-group">
+					           		 	<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">公司名称</label>
+						            	<div class="col-lg-10">
+						              		<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+				                		</div>
+					          		</div>
+					          	<div class="form-group">
+					            	<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">法人代表</label>
+					            	<div class="col-lg-10">
+					              		<input type="phone" class="form-control" id="inputEmail1" placeholder="phone">
+				                	</div>
+					          	</div>
+					        	</form>
+					      	</div>
+				    	</section>
+					</div>
+				</div>
+				<div class="row">
+				 	<section class="panel">
+			      		<header class="panel-heading">
+			        		<span class="label label-primary">列表显示设置</span>
+			      		</header>
+				      	<div class="panel-body">
+				        	<form class="form-horizontal" role="form">
+								<div class="form-group">
+							    	<label class="control-label col-md-3">公司公告每页显示条数</label>
+								    <div class="col-md-9">
+								        <div id="spinner3">
+								            <div class="input-group w-150">
+								                <input type="text" class="spinner-input form-control" maxlength="2" readonly="">
+								                <div class="spinner-buttons input-group-btn">
+								                    <button type="button" class="btn btn-default spinner-up">
+								                        <i class="fa fa-angle-up"></i>
+								                    </button>
+								                    <button type="button" class="btn btn-default spinner-down">
+								                        <i class="fa fa-angle-down"></i>
+								                    </button>
+								                </div>
+								            </div>
+								        </div>
+									</div>
+								</div>
+								<div class="form-group">
+							    	<label class="control-label col-md-3">行业动态每页显示条数</label>
+								    <div class="col-md-9">
+								        <div id="spinner3">
+								            <div class="input-group w-150">
+								                <input type="text" class="spinner-input form-control" maxlength="2" readonly="">
+								                <div class="spinner-buttons input-group-btn">
+								                    <button type="button" class="btn btn-default spinner-up">
+								                        <i class="fa fa-angle-up"></i>
+								                    </button>
+								                    <button type="button" class="btn btn-default spinner-down">
+								                        <i class="fa fa-angle-down"></i>
+								                    </button>
+								                </div>
+								            </div>
+								        </div>
+									</div>
+								</div>
+								<div class="form-group">
+							    	<label class="control-label col-md-3">法律法规每页显示条数</label>
+								    <div class="col-md-9">
+								        <div id="spinner3">
+								            <div class="input-group w-150">
+								                <input type="text" class="spinner-input form-control" maxlength="2" readonly="">
+								                <div class="spinner-buttons input-group-btn">
+								                    <button type="button" class="btn btn-default spinner-up">
+								                        <i class="fa fa-angle-up"></i>
+								                    </button>
+								                    <button type="button" class="btn btn-default spinner-down">
+								                        <i class="fa fa-angle-down"></i>
+								                    </button>
+								                </div>
+								            </div>
+								        </div>
+									</div>
+								</div>
+								<div class="form-group">
+								    <label class="control-label col-md-3">产品列表每页显示条数</label>
+								    <div class="col-md-2">
+								        <div id="spinner1">
+								            <div class="input-group input-small">
+								                <input type="text" class="spinner-input form-control" maxlength="3" readonly="">
+								                <div class="spinner-buttons input-group-btn btn-group-vertical">
+								                    <button type="button" class="btn spinner-up btn-xs btn-default">
+								                        <i class="fa fa-angle-up"></i>
+								                    </button>
+								                    <button type="button" class="btn spinner-down btn-xs btn-default">
+								                        <i class="fa fa-angle-down"></i>
+								                    </button>
+								                </div>
+								            </div>
+								        </div>
+							        </div>
+								</div>
+				        	</form>
+				      	</div>
+			    	</section>
+				</div>
+			</section>
+		</section>
+
+		<footer class="site-footer">
+			<div class="text-center">
+				2016 &copy; 后台管理 by <a href="" target="_blank"> Weimasoft
+					Enterprise </a> <a href="https://github.com/weimasoft" class="go-top">
+					<i class="fa fa-angle-up"> </i>
+				</a>
+			</div>
+		</footer>
+	</section>
+
+	<script src="scripts/jquery-1.8.3.min.js"></script>
+	<!-- BASIC JQUERY 1.8.3 LIB. JS -->
+	<script src="scripts/bootstrap.min.js"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="scripts/jquery.dcjqaccordion.2.7.js"></script>
+	<!-- ACCORDIN JS -->
+	<script src="scripts/jquery.scrollTo.min.js"></script>
+	<!-- SCROLLTO JS -->
+	<script src="scripts/jquery.nicescroll.js"></script>
+	<!-- NICESCROLL JS -->
+	<script src="scripts/respond.min.js"></script>
+	<!-- RESPOND JS -->
+	<script src="scripts/jquery.sparkline.js"></script>
+	<!-- SPARKLINE JS -->
+	<script src="scripts/sparkline-chart.js"></script>
+	<!-- SPARKLINE CHART JS -->
+	<script src="scripts/common-scripts.js"></script>
+	<!-- BASIC COMMON JS -->
+	<script src="scripts/count.js"></script>
+	<!-- COUNT JS -->
+	<script src="assets/morris.js-0.4.3/morris.min.js"></script>
+	<!-- MORRIS JS -->
+	<script src="assets/morris.js-0.4.3/raphael-min.js"></script>
+	<!-- MORRIS  JS -->
+	<script src="scripts/chart.js"></script>
+	<!-- CHART JS -->
+	<!--Calendar-->
+	<script src="scripts/calendar/clndr.js"></script>
+	<!-- CALENDER JS -->
+	<script src="scripts/calendar/evnt.calendar.init.js"></script>
+	<!-- CALENDER EVENT JS -->
+	<script src="scripts/calendar/moment-2.2.1.js"></script>
+	<!-- CALENDER MOMENT JS -->
+	<script
+		src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+	<!-- UNDERSCORE JS -->
+	<script src="assets/jquery-knob/js/jquery.knob.js"></script>
+	<!-- JQUERY KNOB JS -->
+	<script>
+		//knob
+		$(".knob").knob();
+	</script>
+	<!-- END JS -->
+</body>
+</html>
