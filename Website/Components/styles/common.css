@@ -1,0 +1,142 @@
+body {
+    font: 12px/1.5 Tahoma, Helvetica, Arial, '宋体', sans-serif;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.sectionBlack {
+    background-color:#000;
+}
+
+.section333 {
+    background-color:#333;
+}
+
+.sectionccc {
+    background-color:#ccc;
+}
+
+.sectionContainer {
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+.leftBorder {
+    border-left:1px solid #929292
+}
+
+.floatl {
+    float:left;
+}
+
+.floatr {
+    float:right;
+}
+
+.overflowv
+{
+	overflow: visible;
+}
+
+.overflowh
+{
+	overflow: hidden;
+}
+
+.left0
+{
+	left:0;
+}
+
+.right0
+{
+	right:0;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover {
+    color:#ccc;
+}
+
+.navigator {
+    position: relative;
+    top:0px;
+    height:40px;
+    width:500px;
+    margin:0 auto;
+}
+
+.navigator ul {
+    margin:0 auto;
+}
+
+.navigator li {
+    list-style-type:none;
+    float:left;
+    margin-left:10px;
+    padding-left:10px;
+}
+
+.navigatorSearch {
+    width:300px;
+    position: relative;
+}
+
+.navigatorSearch input {
+    margin-right:20px;
+}
+
+.translator {
+	width: 100%;
+}
+
+.translator-container {
+	margin: 0 auto;
+	position: relative;
+}
+
+.translator-item-container {
+	position: relative;
+}
+
+.translator-item {
+	float: left;
+}
+
+.translator-btnpreview {
+	width: 57px;
+	height: 73px;
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.translator-btnpreview div {
+	position: absolute;
+	width: 57px;
+	height: 73px;
+	background-image: url(../images/element.png);
+}
+
+.left0 div {
+	background-position: 0 -77px;
+    position: absolute;
+    left:0;
+}
+
+.right0 div {
+	background-position: 0 -150px;
+    position: absolute;
+    right:0;
+}
