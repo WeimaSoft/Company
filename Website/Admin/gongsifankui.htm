@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Weimasoft">
+    <link rel="shortcut icon" href="images/fav.ico">
+    <title>通用后台管理工具--首页</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/bootstrap-reset.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style-responsive.css" rel="stylesheet">
+    <!-- CALENDER CSS -->
+    <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js">
+        </script>
+        <script src="scripts/respond.min.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <section id="container">
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-placement="right" class="fa fa-bars tooltips"></div>
+            </div>
+            <a href="index.htm" class="logo"> <span> 通用后台管理工具 </span></a>
+            <div class="top-nav ">
+                <ul class="nav pull-right top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg" />
+                            <span class="username"> Admin </span>
+                            <b class="caret"> </b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li class="log-arrow-up"></li>
+                            <li>
+                                <a href="gerenziliao.htm">
+                                    <i class="fa fa-suitcase"> </i> 个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.htm">
+                                    <i class="fa fa-cog"> </i> 系统设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-key"> </i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a href="index.htm" class="active">
+                            <i class="fa fa-dashboard"> </i>
+                            <span> 管理首页 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-laptop"> </i>
+                            <span> 新闻管理 </span>
+                            <span class="label label-success span-sidebar"> 3 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="hangyedongtai.htm"> 行业动态 </a></li>
+                            <li><a href="hangyedongtai.htm"> 公司公告 </a></li>
+                            <li><a href="hangyedongtai.htm"> 法律法规 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="chanpinguanli.htm">
+                            <i class="fa fa-book"> </i> <span> 产品管理 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-cogs"> </i> <span> 用户管理 </span>
+                            <span class="label label-primary span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="yonghuliebiao.htm"> 用户列表 </a></li>
+                            <li><a href="yonghuhuodong.htm"> 用户活动报表 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="guanyuwomen.htm">
+                            <i class="fa fa-tasks"> </i> <span> 关于我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="lianxiwomen.htm">
+                            <i class="fa fa-th"> </i> <span> 联系我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-envelope"> </i>
+                            <span> 留言管理</span>
+                            <span class="label label-warning span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="liuyanliebiao.htm"> 留言列表 </a></li>
+                            <li><a href="gongsifankui.htm"> 公司反馈 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="youqinglianjie.htm">
+                            <i class="fa fa-bar-chart-o"> </i>
+                            <span> 友情链接</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <section class="wrapper">
+				<div class="row">
+					<div class="col-md-9">
+					  <div class="tab-content">
+						<div class="tab-pane active" id="tab_1">
+						  <div class="panel-group" id="accordion1">
+							<div class="panel panel-danger">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									1. Lorem Ipsum is simply dummy text of the printing and typesetting industry?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse  in" id="accordion1_1">
+								<div class="panel-body">
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								  
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-success">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_2" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									2. It is a long established fact that a reader will be distracted ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_2">
+								<div class="panel-body">
+								  ThereLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_3" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									3. Contrary to popular belief, Lorem Ipsum is not simply random text?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_3">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel ">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_4" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									4. Various versions have evolved over the years, sometimes by accident?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_4">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-warning">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_5" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									5. The standard chunk of Lorem Ipsum used ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_5">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_6" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									6. All the Lorem Ipsum generators on the Internet tend ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_6">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_7" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									7. There are many variations of passages of Lorem Ipsum available ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_7">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion1_8" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+									8. passages of Lorem Ipsum available ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion1_8">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<div class="tab-pane" id="tab_2">
+						  <div class="panel-group" id="accordion2">
+							<div class="panel panel-success">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion2_1" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+									1. Reprehenderit enim eiusmod high life accusamury ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse  in" id="accordion2_1">
+								<div class="panel-body">
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-danger">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion2_2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+									2. life accusamus terry richardson ad squid. ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion2_2">
+								<div class="panel-body">
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-success">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion2_3" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+									3. Quinoa nesciunt laborum eiusmod moon tempor ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion2_3">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion2_4" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+									4. Anim pariatur cliche reprehenderit?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion2_4">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion2_5" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+									5. Lorem Ipsum is simply dummy text of the printing and typesetting industry.?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion2_5">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<div class="tab-pane" id="tab_3">
+						  <div class="panel-group" id="accordion3">
+							<div class="panel panel-danger">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_1" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse  in" id="accordion3_1">
+								<div class="panel-body">
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								  <p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  </p>
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-success">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_2" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									2. Anim pariatur cliche reprehenderit, enim eiusmod high ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion3_2">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_3" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									3. Laborum eiusmod. Brunch dsfsdff moon tempor ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion3_3">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								  
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_4" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									4. Non Sumon skateboard dolor Lorem ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion3_4">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_5" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									5. Contrary to popular belief, Lorem Ipsum is not simply random text.?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion3_5">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 
+								</div>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+								<h4 class="panel-title">
+								  <a href="#accordion3_6" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
+									6. The standard chunk of Lorem Ipsum used since the ?
+								  </a>
+								</h4>
+							  </div>
+							  <div class="panel-collapse collapse" id="accordion3_6">
+								<div class="panel-body">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nisi purus. Aliquam eget suscipit ligula. Donec convallis vestibulum egestas. Morbi molestie dapibus lorem et congue. Morbi rhoncus euismod tortor, ac ullamcorper mauris sagittis vitae. Pellentesque et nibh sed nunc sagittis euismod. In hac habitasse platea dictumst. 45
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-3">
+					  <ul class="vertical-menu">
+						<li class="active">
+						  <a href="#tab_1" data-toggle="tab">
+							<i class="fa fa-bullhorn">
+							</i>
+							General Questions
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_2" data-toggle="tab">
+							<i class="fa fa-bolt">
+							</i>
+							Lorem Ipsum is simply dummy
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_3" data-toggle="tab">
+							<i class="fa fa-briefcase">
+							</i>
+							Contrary to popular belief
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_1" data-toggle="tab">
+							<i class="fa fa-bookmark">
+							</i>
+							standard chunk of Lorem 
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_2" data-toggle="tab">
+							<i class="fa fa-exclamation-circle">
+							</i>
+							Why Chose Flatlab
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_3" data-toggle="tab">
+							<i class="fa fa-plus">
+							</i>
+							Other Questions
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+			</section>
+        </section>
+
+        <footer class="site-footer">
+            <div class="text-center">
+                2016 &copy; 通用后台管理工具 by <a href="#" target="_blank">Weimasoft</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDIN JS -->
+    <script src="scripts/jquery.nicescroll.js"></script><!-- NICESCROLL JS -->
+    <script src="scripts/common-scripts.js"></script>
+    
+</body>
+</html>
