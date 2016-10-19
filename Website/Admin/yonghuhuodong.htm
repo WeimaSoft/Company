@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Weimasoft">
+    <link rel="shortcut icon" href="images/fav.ico">
+    <title>通用后台管理工具--用户活动报表</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/bootstrap-reset.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style-responsive.css" rel="stylesheet">
+	<link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet"><!-- MORRIS CHART CSS -->
+    <!-- CALENDER CSS -->
+    <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js">
+        </script>
+        <script src="scripts/respond.min.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <section id="container">
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-placement="right" class="fa fa-bars tooltips"></div>
+            </div>
+            <a href="index.htm" class="logo"> <span> 通用后台管理工具 </span></a>
+            <div class="top-nav ">
+                <ul class="nav pull-right top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg" />
+                            <span class="username"> Admin </span>
+                            <b class="caret"> </b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li class="log-arrow-up"></li>
+                            <li>
+                                <a href="gerenziliao.htm">
+                                    <i class="fa fa-suitcase"> </i> 个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.htm">
+                                    <i class="fa fa-cog"> </i> 系统设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-key"> </i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a href="index.htm" class="active">
+                            <i class="fa fa-dashboard"> </i>
+                            <span> 管理首页 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-laptop"> </i>
+                            <span> 新闻管理 </span>
+                            <span class="label label-success span-sidebar"> 3 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="hangyedongtai.htm"> 行业动态 </a></li>
+                            <li><a href="hangyedongtai.htm"> 公司公告 </a></li>
+                            <li><a href="hangyedongtai.htm"> 法律法规 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="chanpinguanli.htm">
+                            <i class="fa fa-book"> </i> <span> 产品管理 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-cogs"> </i> <span> 用户管理 </span>
+                            <span class="label label-primary span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="yonghuliebiao.htm"> 用户列表 </a></li>
+                            <li><a href="yonghuhuodong.htm"> 用户活动报表 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="guanyuwomen.htm">
+                            <i class="fa fa-tasks"> </i> <span> 关于我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="lianxiwomen.htm">
+                            <i class="fa fa-th"> </i> <span> 联系我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-envelope"> </i>
+                            <span> 留言管理</span>
+                            <span class="label label-warning span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="liuyanliebiao.htm"> 留言列表 </a></li>
+                            <li><a href="gongsifankui.htm"> 公司反馈 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="youqinglianjie.htm">
+                            <i class="fa fa-bar-chart-o"> </i>
+                            <span> 友情链接</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <section class="wrapper site-min-height">
+				<div class="row">
+					<div class="col-lg">
+						<div class="row-fluid ui-sortable" id="draggable_portlets">
+						  <div class="col-md-6 column sortable">
+							 <section class="panel">
+								<header class="panel-heading">
+								  <span class="label label-primary">
+									季度用户注册数量
+								  </span>
+								  <span class="tools pull-right">
+									<a href="javascript:;" class="fa fa-chevron-down"></a>
+								  </span>
+								</header>
+								<div class="panel-body">
+								  <div class="chartJS">
+									  <canvas id="bar-chart-js" height="250" width="800" >
+									  </canvas>
+							      </div>
+								</div>
+							 </section>
+							 <section class="panel">
+								<header class="panel-heading">
+								  <span class="label label-primary">
+									月活跃用户数量
+								  </span>
+								  <span class="tools pull-right">
+									<a href="javascript:;" class="fa fa-chevron-down"></a>
+								  </span>
+								</header>
+								<div class="panel-body">
+								  <div class="chartJS">
+									  <canvas id="pie-chart-js" height="250" width="800" >
+									  </canvas>
+								   </div>
+								</div>
+							 </section>
+						  </div>
+						  <div class="col-md-6 column sortable">
+							 <section class="panel">
+								<header class="panel-heading">
+								  <span class="label label-primary">
+									月用户注册数量去年同期对比
+								  </span>
+								  <span class="tools pull-right">
+									<a href="javascript:;" class="fa fa-chevron-down"></a>
+								  </span>
+								</header>
+								<div class="panel-body">
+								  <div class="chartJS">
+									  <canvas id="line-chart-js" height="250" width="800" >
+									  </canvas>
+								  </div>
+								</div>
+							 </section>
+							 <section class="panel">
+								<header class="panel-heading">
+								  <span class="label label-primary">
+									注册用户年龄分布
+								  </span>
+								  <span class="tools pull-right">
+									<a href="javascript:;" class="fa fa-chevron-down"></a>
+								  </span>
+								</header>
+								<div class="panel-body">
+								  <div class="chartJS">
+									  <canvas id="donut-chart-js" height="250" width="800" >
+									  </canvas>
+								  </div>
+								</div>
+							 </section>
+						  </div> 
+					   </div>
+					</div>
+			   </div>
+			</section>
+        </section>
+
+        <footer class="site-footer">
+            <div class="text-center">
+                2016 &copy; 通用后台管理工具 by <a href="#" target="_blank">Weimasoft</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+	<script src="assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" ></script><!-- JQUERY UI LIABRARY JS -->
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDIN JS -->
+	<script src="scripts/jquery.scrollTo.min.js" ></script><!-- SCROLLTO JS  -->
+    <script src="scripts/jquery.nicescroll.js"></script><!-- NICESCROLL JS -->
+	<script src="scripts/respond.min.js" ></script><!-- RESPOND JS  -->
+    <script src="scripts/draggable-portlet.js" ></script><!-- DRAGGABLE PORTLET JS -->
+	 <script src="assets/chart-master/Chart.js" ></script><!-- CHART JS  -->
+     <script src="scripts/common-scripts.js" ></script><!-- BASIC COMMON SCRIPT JS -->
+     <script src="scripts/all-chartjs.js" ></script><!-- CHART FUNCTION JS  -->
+	<script >
+		<!--DRAGGABLE PORTLET FUNCTION  -->
+	 jQuery(document).ready(function() {
+		 DraggablePortlet.init();
+	 });
+	</script>
+  <!-- END JS --> 
+    
+</body>
+</html>
