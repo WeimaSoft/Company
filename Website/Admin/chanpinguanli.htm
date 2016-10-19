@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Weimasoft">
+    <link rel="shortcut icon" href="images/fav.ico">
+    <title>通用后台管理工具--产品管理</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/bootstrap-reset.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style-responsive.css" rel="stylesheet">
+    <!-- CALENDER CSS -->
+    <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js">
+        </script>
+        <script src="scripts/respond.min.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <section id="container">
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-placement="right" class="fa fa-bars tooltips"></div>
+            </div>
+            <a href="index.htm" class="logo"> <span> 通用后台管理工具 </span></a>
+            <div class="top-nav ">
+                <ul class="nav pull-right top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg" />
+                            <span class="username"> Admin </span>
+                            <b class="caret"> </b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li class="log-arrow-up"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-suitcase"> </i> 个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.htm">
+                                    <i class="fa fa-cog"> </i> 系统设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-key"> </i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a href="index.htm" class="active">
+                            <i class="fa fa-dashboard"> </i>
+                            <span> 管理首页 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-laptop"> </i>
+                            <span> 新闻管理 </span>
+                            <span class="label label-success span-sidebar"> 3 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="hangyedongtai.htm"> 行业动态 </a></li>
+                            <li><a href="hangyedongtai.htm"> 公司公告 </a></li>
+                            <li><a href="hangyedongtai.htm"> 法律法规 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="chanpinguanli.htm">
+                            <i class="fa fa-book"> </i> <span> 产品管理 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-cogs"> </i> <span> 用户管理 </span>
+                            <span class="label label-primary span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="#"> 用户列表 </a></li>
+                            <li><a href="#"> 用户活动报表 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-tasks"> </i> <span> 关于我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-th"> </i> <span> 联系我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-envelope"> </i>
+                            <span> 留言管理</span>
+                            <span class="label label-warning span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="#"> 留言列表 </a></li>
+                            <li><a href="#"> 公司反馈 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-bar-chart-o"> </i>
+                            <span> 友情链接</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <i class="fa fa-hand-o-down"></i>
+                            水利产品
+                            <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="pro-sort">
+                                <label class="pro-lab">
+                                    Sort By
+                                </label>
+                                <select class="styled hasCustomSelect" style="-webkit-appearance: menulist-button; width: 133px; position: absolute; opacity: 0; height: 39px; font-size: 12px;">
+                                    <option>
+                                        Default Sorting
+                                    </option>
+                                    <option>
+                                        Popularity
+                                    </option>
+                                    <option>
+                                        Average Rating
+                                    </option>
+                                    <option>
+                                        Newness
+                                    </option>
+                                    <option>
+                                        Price Low to High
+                                    </option>
+                                    <option>
+                                        Price High to Low
+                                    </option>
+                                </select><span class="customSelect styled" style="display: inline-block;">
+                                                <span class="customSelectInner" style="width: 111px; display: inline-block;">
+                                                    Default Sorting
+                                                </span>
+                                            </span>
+                            </div>
+                            <div class="pro-sort">
+                                <label class="pro-lab">
+                                    Show
+                                </label>
+                                <select class="styled hasCustomSelect" style="-webkit-appearance: menulist-button; width: 122px; position: absolute; opacity: 0; height: 39px; font-size: 12px;">
+                                    <option>
+                                        Result Per Page
+                                    </option>
+                                    <option>
+                                        2 Per Page
+                                    </option>
+                                    <option>
+                                        4 Per Page
+                                    </option>
+                                    <option>
+                                        6 Per Page
+                                    </option>
+                                    <option>
+                                        8 Per Page
+                                    </option>
+                                    <option>
+                                        10 Per Page
+                                    </option>
+                                </select><span class="customSelect styled" style="display: inline-block;">
+                                                <span class="customSelectInner" style="width: 100px; display: inline-block;">
+                                                    Result Per Page
+                                                </span>
+                                            </span>
+                            </div>
+                            <div class="pull-right">
+                                <ul class="pagination pagination-sm pro-page-list">
+                                    <li>
+                                        <a href="#">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            »
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="grid cs-style-3">
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/4.jpg" alt="img04">
+                                        <figcaption>
+                                            <h3>Mindblowing</h3>
+                                            <span>lorem ipsume </span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/4.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/1.jpg" alt="img01">
+                                        <figcaption>
+                                            <h3>Clean &amp; Fresh</h3>
+                                            <span>dolor ament</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/1.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/2.jpg" alt="img02">
+                                        <figcaption>
+                                            <h3>Flat Concept</h3>
+                                            <span>tawseef tasi</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/2.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/5.jpg" alt="img05">
+                                        <figcaption>
+                                            <h3>Modern</h3>
+                                            <span>dkmosa inc</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/5.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/3.jpg" alt="img03">
+                                        <figcaption>
+                                            <h3>Clean Code</h3>
+                                            <span>nice concept</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/3.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/6.jpg" alt="img06">
+                                        <figcaption>
+                                            <h3>Cheers</h3>
+                                            <span>sumon ahmed</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/6.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/4.jpg" alt="img04">
+                                        <figcaption>
+                                            <h3>Freshness</h3>
+                                            <span>rerum facilis </span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/4.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/1.jpg" alt="img01">
+                                        <figcaption>
+                                            <h3>Awesome</h3>
+                                            <span>At vero eos</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/1.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/2.jpg" alt="img02">
+                                        <figcaption>
+                                            <h3>Music</h3>
+                                            <span>atque corrupti </span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/2.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/3.jpg" alt="img03">
+                                        <figcaption>
+                                            <h3>Clean Code</h3>
+                                            <span>nice concept</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/3.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/6.jpg" alt="img06">
+                                        <figcaption>
+                                            <h3>Cheers</h3>
+                                            <span>sumon ahmed</span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/6.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="images/gallery/4.jpg" alt="img04">
+                                        <figcaption>
+                                            <h3>Freshness</h3>
+                                            <span>rerum facilis </span>
+                                            <a class="fancybox" data-fancybox-group="group" href="images/gallery/4.jpg">Read</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                    </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+        <footer class="site-footer">
+            <div class="text-center">
+                2016 &copy; 通用后台管理工具 by <a href="#" target="_blank">Weimasoft</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDIN JS -->
+    <script src="scripts/jquery.nicescroll.js"></script><!-- NICESCROLL JS -->
+    <script src="scripts/common-scripts.js"></script>
+    
+</body>
+</html>
