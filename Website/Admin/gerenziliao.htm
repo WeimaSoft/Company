@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Weimasoft">
+    <link rel="shortcut icon" href="images/fav.ico">
+    <title>通用后台管理工具--个人资料</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/bootstrap-reset.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style-responsive.css" rel="stylesheet">
+    <!-- CALENDER CSS -->
+    <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js">
+        </script>
+        <script src="scripts/respond.min.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <section id="container">
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-placement="right" class="fa fa-bars tooltips"></div>
+            </div>
+            <a href="index.htm" class="logo"> <span> 通用后台管理工具 </span></a>
+            <div class="top-nav ">
+                <ul class="nav pull-right top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg" />
+                            <span class="username"> Admin </span>
+                            <b class="caret"> </b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li class="log-arrow-up"></li>
+                            <li>
+                                <a href="gerenziliao.htm">
+                                    <i class="fa fa-suitcase"> </i> 个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.htm">
+                                    <i class="fa fa-cog"> </i> 系统设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-key"> </i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a href="index.htm" class="active">
+                            <i class="fa fa-dashboard"> </i>
+                            <span> 管理首页 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-laptop"> </i>
+                            <span> 新闻管理 </span>
+                            <span class="label label-success span-sidebar"> 3 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="hangyedongtai.htm"> 行业动态 </a></li>
+                            <li><a href="hangyedongtai.htm"> 公司公告 </a></li>
+                            <li><a href="hangyedongtai.htm"> 法律法规 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="chanpinguanli.htm">
+                            <i class="fa fa-book"> </i> <span> 产品管理 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-cogs"> </i> <span> 用户管理 </span>
+                            <span class="label label-primary span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="yonghuliebiao.htm"> 用户列表 </a></li>
+                            <li><a href="yonghuhuodong.htm"> 用户活动报表 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="guanyuwomen.htm">
+                            <i class="fa fa-tasks"> </i> <span> 关于我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="lianxiwomen.htm">
+                            <i class="fa fa-th"> </i> <span> 联系我们 </span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">
+                            <i class="fa fa-envelope"> </i>
+                            <span> 留言管理</span>
+                            <span class="label label-warning span-sidebar"> 2 </span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="liuyanliebiao.htm"> 留言列表 </a></li>
+                            <li><a href="gongsifankui.htm"> 公司反馈 </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="youqinglianjie.htm">
+                            <i class="fa fa-bar-chart-o"> </i>
+                            <span> 友情链接</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <section class="wrapper">
+				<div class="row">
+					<aside class="profile-nav col-lg-3">
+					  <section class="panel">
+						<div class="user-heading round">
+						  <a href="#">
+							<img src="images/profile-avatar.jpg" alt="">
+						  </a>
+						  <h1>
+							Pruthvi Bardolia
+						  </h1>
+						  <p>
+							pruthvi@tripzmate.com
+						  </p>
+						</div>
+						<ul class="nav nav-pills nav-stacked">
+						  <li class="active">
+							<a href="profile.html">
+							  
+							  <i class="fa fa-user">
+							  </i>
+							  Profile
+							</a>
+						  </li>
+						  <li>
+							<a href="profile-activity.html">
+							  
+							  <i class="fa fa-calendar">
+							  </i>
+							  Recent Activity 
+							  <span class="label label-primary pull-right r-activity">
+								5
+							  </span>
+							</a>
+						  </li>
+						  <li>
+							<a href="profile-edit.html">
+							  
+							  <i class="fa fa-edit">
+							  </i>
+							  Edit profile
+							</a>
+						  </li>
+						</ul>
+					  </section>
+					  <section class="panel">
+						<div class="panel-body">
+						  <ul class="p-info">
+							<li>
+							  <div class="title">
+								Gender
+							  </div>
+							  <div class="desk">
+								Male
+							  </div>
+							</li>
+							<li>
+							  <div class="title">
+								Founder
+							  </div>
+							  <div class="desk">
+								Olive Inc.
+							  </div>
+							</li>
+							<li>
+							  <div class="title">
+								Education
+							  </div>
+							  <div class="desk">
+								Degree in Computer 
+							  </div>
+							</li>
+							<li>
+							  <div class="title">
+								Project Done
+							  </div>
+							  <div class="desk">
+								150+
+							  </div>
+							</li>
+							<li>
+							  <div class="title">
+								Skills
+							  </div>
+							  <div class="desk">
+								HTML, CSS, JavaScript.
+							  </div>
+							</li>
+						  </ul>
+						</div>
+					  </section>
+					</aside>
+					<aside class="profile-info col-lg-9">
+					  <div class="panel">
+						<div class="panel-body">
+						  <div class="profile-desk">
+							<h1>
+							  Pruthvi Bardolia
+							</h1>
+							<span class="designation">
+							  Entrepreneur &amp; Chief Sarathi @ Custom Theme
+							</span>
+							<p class="bio-graph-heading">
+							  “Winners never quit and quitters never win.”
+							  I have 10 years of experience designing for the web, and specialize in the areas of user interface design, interaction design, visual design and prototyping. I’ve worked with notable startups including Pearl Street Software.
+							</p>
+							<a class="btn p-follow-btn pull-left" href="#">
+							  
+							  <i class="fa fa-check">
+							  </i>
+							  Following
+							</a>
+							<ul class="p-social-link pull-right">
+							  <li>
+								<a href="#">
+								  <i class="fa fa-facebook">
+								  </i>
+								</a>
+							  </li>
+							  <li class="active">
+								<a href="#">
+								  <i class="fa fa-twitter">
+								  </i>
+								</a>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-google-plus">
+								  </i>
+								</a>
+							  </li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					  <section class="panel">
+						<div class="panel-body bio-graph-info">
+						  <h1>
+							Bio Graph
+						  </h1>
+						  <div class="row">
+							<div class="bio-row">
+							  <p>
+								<span>
+								  First Name 
+								</span>
+								: Pruthvi
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Last Name 
+								</span>
+								: Bardolia
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Country 
+								</span>
+								: India
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Birthday
+								</span>
+								: 13 July 1991
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Occupation 
+								</span>
+								:Entrepreneur &amp; Chief Sarathi @ Custom Theme
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Email 
+								</span>
+								: pruthvi@tripzmate.com 
+							  </p>
+							</div>
+							<div class="bio-row">
+							  <p>
+								<span>
+								  Mobile 
+								</span>
+								: (+91) 9722577431
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </section>
+					  <section class="panel">
+						<form>
+						  <textarea placeholder="Whats in your mind..?" rows="2" class="form-control input-lg p-text-area">                  </textarea>
+						</form>
+						<footer class="panel-footer">
+						  <button class="btn btn-info pull-right">
+							Post
+						  </button>
+						  <ul class="nav nav-pills">
+							<li>
+							  <a href="#">
+								<i class="fa fa-map-marker">
+								</i>
+							  </a>
+							</li>
+							<li>
+							  <a href="#">
+								<i class="fa fa-camera">
+								</i>
+							  </a>
+							</li>
+							<li>
+							  <a href="#">
+								<i class=" fa fa-film">
+								</i>
+							  </a>
+							</li>
+							<li>
+							  <a href="#">
+								<i class="fa fa-microphone">
+								</i>
+							  </a>
+							</li>
+						  </ul>
+						</footer>
+					  </section>
+					  <section>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="panel with-nav-tabs panel-primary panel-square panel-no-border">
+							  <div class="panel-heading">
+								<ul class="nav nav-tabs">
+								  <li class="active">
+									<a href="#panel-home" data-toggle="tab">
+									  <i class="fa fa-home">
+									  </i>
+									</a>
+								  </li>
+								  <li class="">
+									<a href="#panel-friend" data-toggle="tab">
+									  <i class="fa fa-users">
+									  </i>
+									</a>
+								  </li>
+								</ul>
+							  </div>
+							  <div id="panel-collapse-1" class="collapse in">
+								<div class="panel-body">
+								  <div class="tab-content">
+									<div class="tab-pane fade active in" id="panel-home">
+									  <h4 class="small-heading more-margin-bottom">
+										MY ACTIVITIES
+									  </h4>
+									  <ul class="media-list media-xs">
+										<li class="media">
+										  <a class="pull-left" href="#fakelink">
+											<img class="media-object img-square" src="images/chat-avatar.jpg" alt="Avatar">
+										  </a>
+										  <div class="media-body">
+											<h4 class="media-heading">
+											  <a href="#fakelink">
+												Wrote a post
+											  </a>
+											</h4>
+											<p class="date">
+											  <small>
+												2 days ago
+											  </small>
+											</p>
+											<p class="small">
+											  Sometimes you just need to distance yourself from people. If they care, they’ll notice. If they don’t, you know where you stand
+											</p>
+										  </div>
+										</li>
+										<li class="media">
+										  <a class="pull-left" href="#fakelink">
+											<img class="media-object img-square" src="images/chat-avatar2.jpg" alt="Avatar">
+										  </a>
+										  <div class="media-body">
+											<h4 class="media-heading">
+											  <a href="#fakelink">
+												Rate a story
+											  </a>
+											</h4>
+											<p class="date">
+											  <small>
+												5 hours ago
+											  </small>
+											</p>
+											<p>
+											  <strong>
+												<a href="#fakelink">
+												  Consectetuer adipiscing elit, sed diam nonummy nibh
+												</a>
+											  </strong>
+											</p>
+											<p class="small">
+											  “Sometimes I feel as though there are two me's, one coasting directly on top of the other: the superficial me, who nods when she's supposed to nod and says what she's supposed to say, and some other, deeper part, the part that worries and dreams... Most of the time they move along in sync and I hardly notice the split, but sometimes it feels as though I'm two whole different people and I could rip apart at any second.” 
+											</p>
+											<p class="text-muted small">
+											  By Thomas White
+											</p>
+											<p>
+											  <i class="fa fa-star text-warning">
+											  </i>
+											  <i class="fa fa-star text-warning">
+											  </i>
+											  <i class="fa fa-star text-warning">
+											  </i>
+											  <i class="fa fa-star text-warning">
+											  </i>
+											  <i class="fa fa-star">
+											  </i>
+											</p>
+										  </div>
+										</li>
+										<li class="media">
+										  <a class="pull-left" href="#fakelink">
+											<img class="media-object img-square" src="images/chat-avatar.jpg" alt="Avatar">
+										  </a>
+										  <div class="media-body">
+											<h4 class="media-heading">
+											  <a href="#fakelink">
+												Updated a quote
+											  </a>
+											</h4>
+											<p class="date">
+											  <small>
+												Yesterday
+											  </small>
+											</p>
+											<blockquote>
+											  “I am the perfect version of me.” 
+											  <small>
+												at 
+												<a href="#fakelink">
+												  Surat,Gujarat
+												</a>
+											  </small>
+											</blockquote>
+										  </div>
+										</li>
+										<li class="media">
+										  <a class="pull-left" href="#fakelink">
+											<img class="media-object img-square" src="images/chat-avatar2.jpg" alt="Avatar">
+										  </a>
+										  <div class="media-body">
+											<h4 class="media-heading">
+											  <a href="#fakelink">
+												Commented a photo
+											  </a>
+											</h4>
+											<p class="date">
+											  <small>
+												2 hours ago
+											  </small>
+											</p>
+											<div class="row">
+											  <div class="col-sm-6">
+												<img src="images/fb_post_image.jpg" class="img-responsive thumbnail" alt="Image">
+											  </div>
+											  <!-- /.col-sm-6 -->
+											</div>
+											<!-- /.row -->
+											<p class="small">
+											  Amazing Quotes..!
+											</p>
+										  </div>
+										</li>
+									  </ul>
+									</div>
+									<div class="tab-pane fade" id="panel-friend">
+									  <h4 class="small-heading more-margin-bottom">
+										ALL FRIEND
+									  </h4>
+									  <div class="row">
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-1.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Ottaviano Bucci
+												</h4>
+												<p class="text-success">
+												  @ottavianobucci
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-2.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Pavlos Caruana
+												</h4>
+												<p class="text-success">
+												  @pavloscaruana
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-3.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Innocenzo Martinelli
+												</h4>
+												<p class="text-success">
+												  @innocenzomartinelli
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-4.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Kiyomasu Chew
+												</h4>
+												<p class="text-success">
+												  @kiyomasuchew
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-1.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Sanjiro Miyasato
+												</h4>
+												<p class="text-success">
+												  @sanjiromiyasato
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-2.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Prisko Bero
+												</h4>
+												<p class="text-success">
+												  @priskobero
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-3.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Mandel Ashlin
+												</h4>
+												<p class="text-success">
+												  @mandelashlin
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-4.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Esra Pettway
+												</h4>
+												<p class="text-success">
+												  @esrapettway
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-3.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Rasheeq Jabbour
+												</h4>
+												<p class="text-success">
+												  @rasheeqjabbour
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-1.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Adak Turkoglu
+												</h4>
+												<p class="text-success">
+												  @adakturkoglu
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-2.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  John Carter
+												</h4>
+												<p class="text-success">
+												  @johncarter
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+										<div class="col-sm-6">
+										  <!-- BEGIN USER CARD LONG -->
+										  <div class="the-box bg-blue no-border">
+											<div class="media user-card-sm">
+											  <a class="pull-left" href="#fakelink">
+												<img class="media-object img-square" src="images/avatar/avatar-3.jpg" alt="Avatar">
+											  </a>
+											  <div class="media-body">
+												<h4 class="media-heading">
+												  Ash King
+												</h4>
+												<p class="text-success">
+												  @ashking
+												</p>
+											  </div>
+											  <div class="right-button">
+												<button class="btn btn-info">
+												  <i class="fa fa-envelope">
+												  </i>
+												</button>
+											  </div>
+											  <!-- /.right-button -->
+											</div>
+										  </div>
+										  <!-- /.the-box .no-border -->
+										  <!-- BEGIN USER CARD LONG -->
+										</div>
+										<!-- /.col-sm-6 -->
+									  </div>
+									  <!-- /.row -->
+									</div>
+								  </div>
+								  <!-- /.tab-content -->
+								</div>
+								<!-- /.panel-body -->
+							  </div>
+							  <!-- /.collapse in -->
+							</div>
+						  </div>
+						</div>
+					  </section>
+					</aside>
+				  </div>
+			</section>
+        </section>
+
+        <footer class="site-footer">
+            <div class="text-center">
+                2016 &copy; 通用后台管理工具 by <a href="#" target="_blank">Weimasoft</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDIN JS -->
+    <script src="scripts/jquery.nicescroll.js"></script><!-- NICESCROLL JS -->
+    <script src="scripts/common-scripts.js"></script>
+    
+</body>
+</html>
